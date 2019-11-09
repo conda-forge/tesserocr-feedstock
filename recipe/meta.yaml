@@ -1,5 +1,5 @@
 {% set name = "tesserocr" %}
-{% set version = "2.4.1" %}
+{% set version = "2.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8becfe0542a1a118fe92f9b2c1fc0ded9c90ce12a8374b3de33a9e20179fa546
+  sha256: 3bca978dae9e03a327414d3da86954a943233a5169e25aaef14cddbb791d435a
 
 build:
   number: 0
