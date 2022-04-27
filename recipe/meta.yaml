@@ -20,7 +20,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - tesseract
+    - tesseract  # [not win]
+    - tesseract <5  # [win]
     - cython
     - python
     - pip
