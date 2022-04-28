@@ -8,4 +8,4 @@ set INCLUDE=%LIBRARY_INC%;%INCLUDE%;%RECIPE_DIR%;%INSTALL_DIR%\include
 dir
 cd dist
 dir
-%PYTHON% -m pip install tess*.whl
+%PYTHON% -m pip install --find-links=. tesserocr
