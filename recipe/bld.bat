@@ -6,4 +6,4 @@ set INCLUDE=%LIBRARY_INC%;%INCLUDE%;%RECIPE_DIR%;%INSTALL_DIR%\include
 %PYTHON% setup.py build
 %PYTHON% setup.py bdist_wheel
 %PYTHON% -m pip uninstall tesserocr
-%PYTHON% -m pip install dist\tesserocr*.whl
+%PYTHON% -m pip install dist\\*.whl
