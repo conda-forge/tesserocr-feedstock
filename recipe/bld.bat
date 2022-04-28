@@ -5,7 +5,4 @@ set INCLUDE=%LIBRARY_INC%;%INCLUDE%;%RECIPE_DIR%;%INSTALL_DIR%\include
 %PYTHON% setup.py clean --all
 %PYTHON% setup.py build
 %PYTHON% setup.py bdist_wheel
-dir
-cd dist
-dir
-%PYTHON% -m pip install --find-links=. tesserocr
+%PYTHON% -m pip install --find-links=dist tesserocr
