@@ -11,11 +11,12 @@ source:
   sha256: 9371dd3f6fe3238039c73bfe15bcaf21389f7e75f62bd530a30110149f39b2ae
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and py==27]
 
 requirements:
   build:
+    - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
