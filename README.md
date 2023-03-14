@@ -1,11 +1,11 @@
-About tesserocr
-===============
+About tesserocr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tesserocr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sirfz/tesserocr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tesserocr-feedstock/blob/main/LICENSE.txt)
 
 Summary: A simple, Pillow-friendly, Python wrapper around tesseract-ocr API using Cython
 
