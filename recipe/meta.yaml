@@ -11,7 +11,7 @@ source:
   sha256: 45c093630337d01a6a8f977a246ad6d732eb11f2e072bb226d59ad3d24781c99
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and py==27]
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - pkg-config
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - tesseract
