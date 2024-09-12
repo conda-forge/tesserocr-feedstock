@@ -28,6 +28,7 @@ requirements:
     - cython
     - python
     - pip
+    - setuptools
   run:
     - python
     - {{ pin_compatible('tesseract', max_pin='x.x') }}
