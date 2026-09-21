@@ -26,6 +26,7 @@ requirements:
   host:
     - tesseract
     - cython
+    - cysignals
     - python
     - pip
     - setuptools
@@ -33,6 +34,7 @@ requirements:
     - python
     - {{ pin_compatible('tesseract', max_pin='x.x') }}
     - leptonica  # [not win]
+    - cysignals
     - pillow
 
 test:
