@@ -17,7 +17,7 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
+    - cython >=3.0.0,<3.2.0                  # [build_platform != target_platform]
     - pkg-config
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
@@ -25,7 +25,7 @@ requirements:
     - setuptools
   host:
     - tesseract
-    - cython
+    - cython >=3.0.0,<3.2.0
     - cysignals
     - python
     - pip
