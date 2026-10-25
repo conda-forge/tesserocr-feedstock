@@ -1,5 +1,5 @@
 {% set name = "tesserocr" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,16 +8,16 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c1ae89c589fddf3a25dbcc21031aea18bd82259e42ef491c43a44f2bef811b3
+  sha256: 362b5f7c2fd5bf3452a719829999f263ebca687bfe5da8c2eb1d77792264a4aa
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython >=3.0.0,<3.2.0                  # [build_platform != target_platform]
+    - cython >=3.1.8,<3.4.0                  # [build_platform != target_platform]
     - pkg-config
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
@@ -25,8 +25,7 @@ requirements:
     - setuptools
   host:
     - tesseract
-    - cython >=3.0.0,<3.2.0
-    - cysignals
+    - cython >=3.1.8,<3.4.0
     - python
     - pip
     - setuptools
@@ -34,7 +33,6 @@ requirements:
     - python
     - {{ pin_compatible('tesseract', max_pin='x.x') }}
     - leptonica  # [not win]
-    - cysignals
     - pillow
 
 test:
