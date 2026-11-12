@@ -1,5 +1,5 @@
 {% set name = "tesserocr" %}
-{% set version = "2.12.0" %}
+{% set version = "2.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 362b5f7c2fd5bf3452a719829999f263ebca687bfe5da8c2eb1d77792264a4aa
+  sha256: 475460f736e5ac23dfcfbd414435581fa6eb0e849e80c816da2ff1b4af7d88ed
 
 build:
   number: 0
